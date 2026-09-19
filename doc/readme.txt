@@ -1,7 +1,7 @@
-AlifeDiegetic: In-world volume control for STALKER Anomaly, by Damian
+DiegeticControl: In-world volume control for STALKER Anomaly, by Damian
 Version: 1.0.10-snapshot (xlibs 1.8.4, demonized 20250908)
-Changelog: https://github.com/damiansirbu-stalker/AlifeDiegetic/blob/main/doc/changelog
-Russian / На русском: https://github.com/damiansirbu-stalker/AlifeDiegetic/blob/main/doc/readme_ru.txt
+Changelog: https://github.com/damiansirbu-stalker/DiegeticControl/blob/main/doc/changelog
+Russian / На русском: https://github.com/damiansirbu-stalker/DiegeticControl/blob/main/doc/readme_ru.txt
 
 My work:
 GitHub: https://github.com/orgs/damiansirbu-stalker/repositories
@@ -11,7 +11,7 @@ Nexus: https://www.nexusmods.com/profile/damiansirbu/mods
 My contributions:
 X-Ray Monolith: https://github.com/themrdemonized/xray-monolith
 
-Anomaly has no way to control the volume of radios, megaphones, guitars, and harmonicas independently from the game's audio sliders. You can't turn down Duty propaganda without killing ambient sounds. AlifeDiegetic fixes this.
+Anomaly has no way to control the volume of radios, megaphones, guitars, and harmonicas independently from the game's audio sliders. You can't turn down Duty propaganda without killing ambient sounds. DiegeticControl fixes this.
 
 The mod hooks directly into the audio subsystems that play in-world sound: ph_sound for radios and megaphones, guitar_anim for campfire guitar, harmonica_anim for harmonica. Each source gets its own volume slider, enable/disable toggle, and where applicable a pause multiplier that controls silence between tracks or announcements.
 
@@ -52,7 +52,7 @@ Harmonica by Daiviey (optional, for harmonica control)
 
 Install (MO2):
 1. Install xlibs
-2. Install AlifeDiegetic
+2. Install DiegeticControl
 3. Load order does not matter
 4. Configure via MCM
 
@@ -60,7 +60,7 @@ Uninstall (MO2):
 Disable or remove in MO2.
 
 Configuration:
-All settings in MCM under AlifeDiegetic. All defaults are 1.0 (unchanged from game behavior).
+All settings in MCM under DiegeticControl. All defaults are 1.0 (unchanged from game behavior).
 
 Compatibility:
 Coexists with the mods it controls. It hooks ph_sound, guitar_anim, and harmonica_anim, and a control is inactive when its mod is absent.
@@ -82,18 +82,18 @@ The mod avoids writing engine values, holding its own state in parallel. Any val
 The family runs on one rulebook through xlibs. Every rule, policy, and check is one shared implementation, the same protection, distances, faction logic, and combat reads in every mod.
 It depends on no other mod, not even my own. The only shared layers are X-Ray and xlibs.
 
-[Screenshot: AlifeDiegetic under JitProfiler, a live CPU and allocation capture]
-Project Health: https://damiansirbu-stalker.github.io/AlifeDiegetic/
+[Screenshot: DiegeticControl under JitProfiler, a live CPU and allocation capture]
+Project Health: https://damiansirbu-stalker.github.io/DiegeticControl/
 
 Credits:
 Altogolik - support, ideas, source materials
 
 Usage and License:
   Modpacks: allowed and encouraged. Keep the readme and license files.
-  Addons, patches, integrations: allowed. Credit "AlifeDiegetic by Damian Sirbu" visibly on your mod page.
+  Addons, patches, integrations: allowed. Credit "DiegeticControl by Damian Sirbu" visibly on your mod page.
   Reproducing the implementation in other software: not allowed, even with credit.
   Full license in LICENSE file and on GitHub.
 
 Diagnostics and reporting:
-Debug mode: turn on in MCM, reproduce, then off. Writes alifediegetic.log.
-Report at https://github.com/damiansirbu-stalker/AlifeDiegetic/issues/new/choose or the EFP, Anomaly, and Zona Discord. Include repro steps, engine build, modlist, load order, xray.log, and the debug log.
+Debug mode: turn on in MCM, reproduce, then off. Writes diegeticcontrol.log.
+Report at https://github.com/damiansirbu-stalker/DiegeticControl/issues/new/choose or the EFP, Anomaly, and Zona Discord. Include repro steps, engine build, modlist, load order, xray.log, and the debug log.

@@ -1,9 +1,9 @@
---- ad_diegetic: Volume/frequency control for in-world radios, megaphones, guitar, harmonica
+--- dc_diegetic: Volume/frequency control for in-world radios, megaphones, guitar, harmonica
 
 local math_random, tonumber, tostring = math.random, tonumber, tostring
 local sound_object, RegisterScriptCallback = sound_object, RegisterScriptCallback
 
-local log = xlog.get_logger("AD", { outfile = "alifediegetic.log" })
+local log = xlog.get_logger("DC", { outfile = "diegeticcontrol.log" })
 
 local CAT_RADIO = "radio"
 local CAT_MEGAPHONE = "megaphone"
@@ -18,7 +18,7 @@ local snap = {
 
 --- Update the config snapshot from MCM.
 local function update_snapshot()
-    local getter = ad_mcm and ad_mcm.get_config
+    local getter = dc_mcm and dc_mcm.get_config
     local function get(key, default)
         local v = getter and getter(key)
         if v == nil then return default end
@@ -76,21 +76,21 @@ local orig_snd_update = nil
 --- Wrap ph_sound.snd_source.update: apply frequency, then set volume from the condlist base.
 local function update_snd_source(self, delta)
     local st = self.st
-    local cat = st._ad_cat
+    local cat = st._dc_cat
     if cat == nil then
         cat = get_theme_category(st.theme)
-        st._ad_cat = cat
+        st._dc_cat = cat
         if snap.debug then log.debug("source theme=%s cat=%s", tostring(st.theme), cat) end
     end
     local vol_mult, freq_mult = get_settings(cat)
 
-    if freq_mult ~= 1.0 or st._ad_pmin ~= nil then
-        if st._ad_pmin == nil then
-            st._ad_pmin = st.pause_min
-            st._ad_pmax = st.pause_max
+    if freq_mult ~= 1.0 or st._dc_pmin ~= nil then
+        if st._dc_pmin == nil then
+            st._dc_pmin = st.pause_min
+            st._dc_pmax = st.pause_max
         end
-        st.pause_min = st._ad_pmin * freq_mult
-        st.pause_max = st._ad_pmax * freq_mult
+        st.pause_min = st._dc_pmin * freq_mult
+        st.pause_max = st._dc_pmax * freq_mult
     end
 
     orig_snd_update(self, delta)
@@ -166,7 +166,7 @@ end
 
 function on_game_start()
     update_snapshot()
-    log.info("AlifeDiegetic v%s (xlibs v%s)", _ad_init.get_version(), xlibs.get_version())
+    log.info("DiegeticControl v%s (xlibs v%s)", _dc_init.get_version(), xlibs.get_version())
     apply_hooks()
     RegisterScriptCallback("actor_on_first_update",      update_snapshot)
     RegisterScriptCallback("on_option_change",           update_snapshot)

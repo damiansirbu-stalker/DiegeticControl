@@ -1,4 +1,4 @@
---- ad_mcm: MCM configuration for AlifeDiegetic
+--- dc_mcm: MCM configuration for DiegeticControl
 
 local RegisterScriptCallback = RegisterScriptCallback
 
@@ -17,27 +17,27 @@ defaults = {
     debug_mode = false,
 }
 
-local build_path = function(key) return "ad/" .. key end
-cfg, get_config, load_config = xmcm.create_config("ad", defaults, build_path)
+local build_path = function(key) return "dc/" .. key end
+cfg, get_config, load_config = xmcm.create_config("dc", defaults, build_path)
 
 function on_mcm_load()
-    local id = "ad"
+    local id = "dc"
     return {
         id = id,
         sh = true,
         gr = {
-            {id = "title", type = "slide", link = "ad_mcm_banner",
-             text = "ui_mcm_ad_title", size = {512, 50}, spacing = 20},
+            {id = "title", type = "slide", link = "dc_mcm_banner",
+             text = "ui_mcm_dc_title", size = {512, 50}, spacing = 20},
 
             {id = "divider_master", type = "line"},
             {id = "desc_master", type = "desc",
-             text = "ui_mcm_ad_desc_master", clr = {255, 200, 200, 100}},
+             text = "ui_mcm_dc_desc_master", clr = {255, 200, 200, 100}},
             {id = "master_volume", type = "track",
              val = 2, min = 0.1, max = 3.0, step = 0.1, def = 1.0},
 
             {id = "divider_radio", type = "line"},
             {id = "desc_radio", type = "desc",
-             text = "ui_mcm_ad_desc_radio", clr = {255, 100, 200, 255}},
+             text = "ui_mcm_dc_desc_radio", clr = {255, 100, 200, 255}},
             {id = "radio_enabled", type = "check", val = 1, def = true},
             {id = "radio_volume", type = "track",
              val = 2, min = 0.1, max = 5.0, step = 0.1, def = 1.0},
@@ -46,7 +46,7 @@ function on_mcm_load()
 
             {id = "divider_megaphone", type = "line"},
             {id = "desc_megaphone", type = "desc",
-             text = "ui_mcm_ad_desc_megaphone", clr = {255, 100, 200, 255}},
+             text = "ui_mcm_dc_desc_megaphone", clr = {255, 100, 200, 255}},
             {id = "megaphone_enabled", type = "check", val = 1, def = true},
             {id = "megaphone_volume", type = "track",
              val = 2, min = 0.1, max = 5.0, step = 0.1, def = 1.0},
@@ -55,29 +55,29 @@ function on_mcm_load()
 
             {id = "divider_guitar", type = "line"},
             {id = "desc_guitar", type = "desc",
-             text = "ui_mcm_ad_desc_guitar", clr = {255, 100, 200, 255}},
+             text = "ui_mcm_dc_desc_guitar", clr = {255, 100, 200, 255}},
             {id = "guitar_enabled", type = "check", val = 1, def = true},
             {id = "guitar_volume", type = "track",
              val = 2, min = 0.1, max = 3.0, step = 0.1, def = 1.0},
 
             {id = "divider_harmonica", type = "line"},
             {id = "desc_harmonica", type = "desc",
-             text = "ui_mcm_ad_desc_harmonica", clr = {255, 100, 200, 255}},
+             text = "ui_mcm_dc_desc_harmonica", clr = {255, 100, 200, 255}},
             {id = "harmonica_enabled", type = "check", val = 1, def = true},
             {id = "harmonica_volume", type = "track",
              val = 2, min = 0.1, max = 3.0, step = 0.1, def = 1.0},
 
             {id = "divider_debug", type = "line"},
             {id = "desc_debug", type = "desc",
-             text = "ui_mcm_ad_desc_debug", clr = {255, 200, 100, 100}},
+             text = "ui_mcm_dc_desc_debug", clr = {255, 200, 100, 100}},
             {id = "debug_mode", type = "check", val = 1, def = false},
 
             {id = "divider_footer", type = "line"},
             {id = "footer", type = "desc",
-             text = "ui_mcm_ad_footer", clr = {255, 150, 150, 150}},
+             text = "ui_mcm_dc_footer", clr = {255, 150, 150, 150}},
             {id = "div_version", type = "line"},
-            {id = "version", type = "desc", text = "ui_mcm_ad_title",
-                ui_hook_functor = { _ad_init.get_platform_functor() },
+            {id = "version", type = "desc", text = "ui_mcm_dc_title",
+                ui_hook_functor = { _dc_init.get_platform_functor() },
                 clr = {255, 212, 201, 168}},
         }
     }

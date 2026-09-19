@@ -1,74 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <string_table>
-    <string id="ui_mcm_menu_ad">
-        <text>AlifeDiegetic</text>
+    <string id="ui_mcm_menu_dc">
+        <text>DiegeticControl</text>
     </string>
-    <string id="ui_mcm_ad_title">
-        <text>AlifeDiegetic</text>
+    <string id="ui_mcm_dc_title">
+        <text>DiegeticControl</text>
     </string>
 
-    <string id="ui_mcm_ad_desc_master">
+    <string id="ui_mcm_dc_desc_master">
         <text>Global multiplier applied to all audio below</text>
     </string>
-    <string id="ui_mcm_ad_master_volume">
+    <string id="ui_mcm_dc_master_volume">
         <text>Master Volume (default: 1.0 = unchanged)</text>
     </string>
 
-    <string id="ui_mcm_ad_desc_radio">
+    <string id="ui_mcm_dc_desc_radio">
         <text>Faction base radios and music</text>
     </string>
-    <string id="ui_mcm_ad_radio_enabled">
+    <string id="ui_mcm_dc_radio_enabled">
         <text>Enable Radios</text>
     </string>
-    <string id="ui_mcm_ad_radio_volume">
+    <string id="ui_mcm_dc_radio_volume">
         <text>Radio Volume (default: 1.0)</text>
     </string>
-    <string id="ui_mcm_ad_radio_frequency">
+    <string id="ui_mcm_dc_radio_frequency">
         <text>Pause Between Tracks (default: 1.0) - higher = longer silence</text>
     </string>
 
-    <string id="ui_mcm_ad_desc_megaphone">
+    <string id="ui_mcm_dc_desc_megaphone">
         <text>Duty propaganda, Arena announcer, alarms</text>
     </string>
-    <string id="ui_mcm_ad_megaphone_enabled">
+    <string id="ui_mcm_dc_megaphone_enabled">
         <text>Enable Megaphones</text>
     </string>
-    <string id="ui_mcm_ad_megaphone_volume">
+    <string id="ui_mcm_dc_megaphone_volume">
         <text>Megaphone Volume (default: 1.0)</text>
     </string>
-    <string id="ui_mcm_ad_megaphone_frequency">
+    <string id="ui_mcm_dc_megaphone_frequency">
         <text>Pause Between Announcements (default: 1.0) - higher = longer silence</text>
     </string>
 
-    <string id="ui_mcm_ad_desc_guitar">
+    <string id="ui_mcm_dc_desc_guitar">
         <text>Campfire guitar (requires Guitar Animation mod)</text>
     </string>
-    <string id="ui_mcm_ad_guitar_enabled">
+    <string id="ui_mcm_dc_guitar_enabled">
         <text>Enable Guitar</text>
     </string>
-    <string id="ui_mcm_ad_guitar_volume">
+    <string id="ui_mcm_dc_guitar_volume">
         <text>Guitar Volume (default: 1.0)</text>
     </string>
 
-    <string id="ui_mcm_ad_desc_harmonica">
+    <string id="ui_mcm_dc_desc_harmonica">
         <text>Harmonica (requires Harmonica mod)</text>
     </string>
-    <string id="ui_mcm_ad_harmonica_enabled">
+    <string id="ui_mcm_dc_harmonica_enabled">
         <text>Enable Harmonica</text>
     </string>
-    <string id="ui_mcm_ad_harmonica_volume">
+    <string id="ui_mcm_dc_harmonica_volume">
         <text>Harmonica Volume (default: 1.0)</text>
     </string>
 
-    <string id="ui_mcm_ad_desc_debug">
+    <string id="ui_mcm_dc_desc_debug">
         <text>Console logging for troubleshooting</text>
     </string>
-    <string id="ui_mcm_ad_debug_mode">
+    <string id="ui_mcm_dc_debug_mode">
         <text>Debug Mode</text>
     </string>
 
 
-    <string id="ui_mcm_ad_footer">
+    <string id="ui_mcm_dc_footer">
         <text>Volume boost above 2x may have diminishing effect due to engine limits</text>
     </string>
 </string_table>

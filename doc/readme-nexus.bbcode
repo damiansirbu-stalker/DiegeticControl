@@ -1,8 +1,8 @@
 [size=3][b]Version: next (xlibs 1.8.4, demonized 20250908)[/b][/size]
-[size=3][b]GitHub: [url=https://github.com/damiansirbu-stalker/AlifeDiegetic]https://github.com/damiansirbu-stalker/AlifeDiegetic[/url][/b][/size]
-[size=3][b]Changelog: [url=https://github.com/damiansirbu-stalker/AlifeDiegetic/blob/main/doc/changelog]doc/changelog[/url] | [url=https://github.com/damiansirbu-stalker/AlifeDiegetic/blob/main/doc/readme_ru.txt]На русском[/url] | [url=https://github.com/damiansirbu-stalker/AlifeDiegetic/issues]Bugs, suggestions[/url][/b][/size]
+[size=3][b]GitHub: [url=https://github.com/damiansirbu-stalker/DiegeticControl]https://github.com/damiansirbu-stalker/DiegeticControl[/url][/b][/size]
+[size=3][b]Changelog: [url=https://github.com/damiansirbu-stalker/DiegeticControl/blob/main/doc/changelog]doc/changelog[/url] | [url=https://github.com/damiansirbu-stalker/DiegeticControl/blob/main/doc/readme_ru.txt]На русском[/url] | [url=https://github.com/damiansirbu-stalker/DiegeticControl/issues]Bugs, suggestions[/url][/b][/size]
 
-Anomaly has no way to control the volume of radios, megaphones, guitars, and harmonicas independently from the game's audio sliders. You can't turn down Duty propaganda without killing ambient sounds. AlifeDiegetic fixes this.
+Anomaly has no way to control the volume of radios, megaphones, guitars, and harmonicas independently from the game's audio sliders. You can't turn down Duty propaganda without killing ambient sounds. DiegeticControl fixes this.
 
 The mod hooks directly into the audio subsystems that play in-world sound: ph_sound for radios and megaphones, guitar_anim for campfire guitar, harmonica_anim for harmonica. Each source gets its own volume slider, enable/disable toggle, and where applicable a pause multiplier that controls silence between tracks or announcements.
 
@@ -57,7 +57,7 @@ Master volume multiplier applied to all sources
 [size=3][b]Install (MO2):[/b][/size]
 [list]
 [*]Install xlibs
-[*]Install AlifeDiegetic
+[*]Install DiegeticControl
 [*]Load order does not matter
 [*]Configure via MCM
 [/list]
@@ -68,11 +68,11 @@ Disable or remove in MO2.
 [line]
 
 [size=3][b]Configuration:[/b][/size]
-All settings in MCM under AlifeDiegetic. All defaults are 1.0 (unchanged from game behavior).
+All settings in MCM under DiegeticControl. All defaults are 1.0 (unchanged from game behavior).
 
 [size=3][b]Compatibility:[/b][/size]
 Requires xlibs.
-Runs on themrdemonized modded exes 2025.9.10 or newer, or AOEngine v0.55 or newer.
+Runs on themrdemonized modded exes 20250908 or newer, or AOEngine v0.55 or newer.
 The full feature set needs the latest demonized build. A feature that needs a newer build stays inactive on older exes.
 Tested with GAMMA. Hooks into ph_sound, guitar_anim, and harmonica_anim. If those mods are not present the relevant controls are inactive. No base script modifications.
 
@@ -87,7 +87,7 @@ Full report in doc/test-report.log.
 [size=3][b]FAQ[/b][/size]
 
 [b]Do I need modded exes?[/b]
-Yes. AlifeDiegetic needs themrdemonized modded exes (2025.9.10 or newer) or AOEngine (v0.55 or newer). Vanilla Anomaly does not expose the APIs it relies on.
+Yes. DiegeticControl needs themrdemonized modded exes (20250908 or newer) or AOEngine (v0.55 or newer). Vanilla Anomaly does not expose the APIs it relies on.
 
 [size=3][b]Credits:[/b][/size]
 Altogolik - support, ideas, source materials
@@ -96,7 +96,7 @@ Altogolik - support, ideas, source materials
 
 [size=3][b]Usage and License:[/b][/size]
 Modpacks: allowed and encouraged. Keep the readme and license files.
-Addons, patches, integrations: allowed. Credit "AlifeDiegetic by Damian Sirbu" visibly on your mod page.
+Addons, patches, integrations: allowed. Credit "DiegeticControl by Damian Sirbu" visibly on your mod page.
 Reproducing the implementation in other software: not allowed, even with credit.
 Full license in LICENSE file and on GitHub.
 
@@ -104,7 +104,7 @@ Full license in LICENSE file and on GitHub.
 
 
 [size=3][b]Reporting issues and suggestions[/b][/size]
-Open a bug report or a suggestion at https://github.com/damiansirbu-stalker/AlifeDiegetic/issues/new/choose.
+Open a bug report or a suggestion at https://github.com/damiansirbu-stalker/DiegeticControl/issues/new/choose.
 Also discussed on the GAMMA, EFP, Anomaly, and Zona Discord servers.
 
 Before posting, read this readme and the MCM options.

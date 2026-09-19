@@ -1,6 +1,6 @@
 ---
 name: Suggestion
-about: Propose an idea or feature for AlifeDiegetic
+about: Propose an idea or feature for DiegeticControl
 title: ''
 labels: suggestion
 ---

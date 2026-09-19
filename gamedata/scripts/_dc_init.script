@@ -1,8 +1,8 @@
---- _ad_init: dependency gate and platform status. Logic hash-locked identical across mods (deps.logic_hash); identity read from _ad_manifest.
+--- _dc_init: dependency gate and platform status. Logic hash-locked identical across mods (deps.logic_hash); identity read from _dc_manifest.
 
 local assert, tostring, type, math_floor = assert, tostring, type, math.floor
 
-local manifest = _ad_manifest.MANIFEST
+local manifest = _dc_manifest.MANIFEST
 
 -- Compatibility floor, YYYYMMDD (stalker-compatibility.md). @src xray/script_ini_file_script.cpp:95-125
 local MIN_DEMONIZED_VERSION = 20250908

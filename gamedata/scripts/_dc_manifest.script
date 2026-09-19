@@ -1,0 +1,7 @@
+--- _dc_manifest: DiegeticControl identity. Pure data, no logic. Read by _dc_init (the gate) and the validator (deps.manifest_structure).
+
+MANIFEST = {
+    name    = "DiegeticControl",
+    version = "1.0.10-snapshot",
+    xlibs   = "1.8.4",
+}
