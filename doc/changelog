@@ -8,7 +8,7 @@
     - Consolidated the whole engine layer into xlibs and standardized naming and structure across every mod.
 
 1.0.9
-  Renamed: now AlifeDiegetic, part of the Alife mod family.
+  Renamed: now DiegeticControl, part of the Diegetic audio family.
   Fixed: radio and megaphone volume holds steady at the set level, and returning a frequency slider to default restores the original timing.
   Fixed: MCM volume-slider and toggle labels now display in both English and Russian.
   Compatibility:
