@@ -1,4 +1,3 @@
-DiegeticControl: In-world volume control for STALKER Anomaly, by Damian
 Version: 1.0.10-snapshot (xlibs 1.8.4, demonized 20250908)
 Changelog: https://github.com/damiansirbu-stalker/DiegeticControl/blob/main/doc/changelog
 Russian / На русском: https://github.com/damiansirbu-stalker/DiegeticControl/blob/main/doc/readme_ru.txt
