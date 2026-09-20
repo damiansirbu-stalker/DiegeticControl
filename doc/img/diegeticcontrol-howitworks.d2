@@ -1,0 +1,40 @@
+direction: right
+
+style.fill: "#1f2421"
+
+**.style.fill: "#262c27"
+**.style.stroke: "#ece7d8"
+**.style.font-color: "#ece7d8"
+**.style.stroke-width: 2
+
+title: "DiegeticControl - a volume knob per in-world sound" {
+  near: top-center
+  style: { stroke-width: 0; fill: "#1f2421"; font-color: "#ece7d8"; font-size: 28 }
+}
+
+sources: "In-world emitters" {
+  radio: "Radios"
+  mega: "Megaphones"
+  guitar: "Guitar"
+  harm: "Harmonica"
+}
+
+hook: "DiegeticControl" {
+  style.stroke: "#c9d8b6"
+  w: "wrap ph_sound.snd_source.update\n(radio / megaphone, by theme)"
+  r: "replace guitar_anim / harmonica_anim play"
+}
+
+mcm: "MCM, per source" {
+  m: "master x volume"
+  f: "pause / frequency"
+  t: "enable toggle"
+}
+
+out: "Engine plays each source\nat your level - silent when off" {
+  style.stroke: "#c9d8b6"
+}
+
+sources -> hook: "intercept" { style: { stroke: "#c9d8b6"; font-color: "#c9d8b6" } }
+mcm -> hook: "settings" { style: { stroke: "#c9d8b6"; font-color: "#c9d8b6" } }
+hook -> out: "adjusted play" { style: { stroke: "#c9d8b6"; font-color: "#c9d8b6" } }
