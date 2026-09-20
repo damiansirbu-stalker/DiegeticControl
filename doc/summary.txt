@@ -1,0 +1,1 @@
+A diegetic audio mixer for STALKER Anomaly: per-source volume for radios, megaphones, guitar, and harmonica, each with its own toggle and pause, plus a master, live through MCM. Turn Duty propaganda down without touching the ambience. Inert when a source is absent. Engine-native, save-safe.

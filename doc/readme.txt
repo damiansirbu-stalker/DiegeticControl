@@ -99,3 +99,5 @@ Usage and License:
 Diagnostics and reporting:
 Debug mode: turn on in MCM, reproduce, then off. Writes diegeticcontrol.log.
 Report at https://github.com/damiansirbu-stalker/DiegeticControl/issues/new/choose or the EFP, Anomaly, and Zona Discord. Include repro steps, engine build, modlist, load order, xray.log, and the debug log.
+
+Tags: engine-native, performance, save-safe, diegetic, audio, audio-mixer, volume-control, per-source-volume, live-control, immersion, quality-of-life
