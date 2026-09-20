@@ -13,6 +13,8 @@ title: "DiegeticControl - a volume knob per in-world sound" {
 }
 
 sources: "In-world emitters" {
+  grid-columns: 1
+  grid-gap: 18
   radio: "Radios"
   mega: "Megaphones"
   guitar: "Guitar"
@@ -21,11 +23,15 @@ sources: "In-world emitters" {
 
 hook: "DiegeticControl" {
   style.stroke: "#c9d8b6"
-  w: "wrap ph_sound.snd_source.update\n(radio / megaphone, by theme)"
+  grid-columns: 1
+  grid-gap: 24
+  w: "wrap ph_sound.snd_source.update  (radio / megaphone, by theme)"
   r: "replace guitar_anim / harmonica_anim play"
 }
 
 mcm: "MCM, per source" {
+  grid-columns: 1
+  grid-gap: 18
   m: "master x volume"
   f: "pause / frequency"
   t: "enable toggle"
