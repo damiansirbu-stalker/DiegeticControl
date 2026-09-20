@@ -10,7 +10,7 @@ Nexus: https://www.nexusmods.com/profile/damiansirbu/mods
 My contributions:
 X-Ray Monolith: https://github.com/themrdemonized/xray-monolith
 
-[ HERO IMAGE: diegeticcontrol-hero.gif — per-source control of in-world sound ]
+[ HERO IMAGE: diegeticcontrol-hero.gif - per-source control of in-world sound ]
 
 Anomaly has no way to control the volume of radios, megaphones, guitars, and harmonicas independently from the game's audio sliders. You can't turn down Duty propaganda without killing ambient sounds. DiegeticControl fixes this.
 
