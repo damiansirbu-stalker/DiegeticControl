@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<string_table>
+  <string id="ui_mcm_menu_dc">
+    <text>DiegeticControl</text>
+  </string>
+  <string id="ui_mcm_dc_title">
+    <text>DiegeticControl</text>
+  </string>
+  <string id="ui_mcm_dc_desc_master">
+    <text>Общий множитель для всего звука ниже</text>
+  </string>
+  <string id="ui_mcm_dc_master_volume">
+    <text>Общая громкость (по умолчанию: 1.0 = без изменений)</text>
+  </string>
+  <string id="ui_mcm_dc_desc_radio">
+    <text>Радио на базах фракций и музыка</text>
+  </string>
+  <string id="ui_mcm_dc_radio_enabled">
+    <text>Включить радио</text>
+  </string>
+  <string id="ui_mcm_dc_radio_volume">
+    <text>Громкость радио (по умолчанию: 1.0)</text>
+  </string>
+  <string id="ui_mcm_dc_radio_frequency">
+    <text>Пауза между треками (по умолчанию: 1.0) - больше = дольше тишина</text>
+  </string>
+  <string id="ui_mcm_dc_desc_megaphone">
+    <text>Пропаганда Долга, диктор Арены, тревоги</text>
+  </string>
+  <string id="ui_mcm_dc_megaphone_enabled">
+    <text>Включить мегафоны</text>
+  </string>
+  <string id="ui_mcm_dc_megaphone_volume">
+    <text>Громкость мегафонов (по умолчанию: 1.0)</text>
+  </string>
+  <string id="ui_mcm_dc_megaphone_frequency">
+    <text>Пауза между объявлениями (по умолчанию: 1.0) - больше = дольше тишина</text>
+  </string>
+  <string id="ui_mcm_dc_desc_guitar">
+    <text>Гитара у костра (требуется мод Guitar Animation)</text>
+  </string>
+  <string id="ui_mcm_dc_guitar_enabled">
+    <text>Включить гитару</text>
+  </string>
+  <string id="ui_mcm_dc_guitar_volume">
+    <text>Громкость гитары (по умолчанию: 1.0)</text>
+  </string>
+  <string id="ui_mcm_dc_desc_harmonica">
+    <text>Губная гармоника (требуется мод Harmonica)</text>
+  </string>
+  <string id="ui_mcm_dc_harmonica_enabled">
+    <text>Включить гармонику</text>
+  </string>
+  <string id="ui_mcm_dc_harmonica_volume">
+    <text>Громкость гармоники (по умолчанию: 1.0)</text>
+  </string>
+  <string id="ui_mcm_dc_desc_debug">
+    <text>Логирование в консоль для диагностики</text>
+  </string>
+  <string id="ui_mcm_dc_debug_mode">
+    <text>Режим отладки</text>
+  </string>
+  <string id="ui_mcm_dc_footer">
+    <text>Усиление громкости выше 2x может давать всё меньший эффект из-за ограничений движка</text>
+  </string>
+</string_table>
