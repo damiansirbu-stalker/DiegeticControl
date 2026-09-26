@@ -1,6 +1,5 @@
 Version: 1.0.10-snapshot (xlibs 1.8.4, demonized 20250908)
-Changelog: https://github.com/damiansirbu-stalker/DiegeticControl/blob/main/doc/changelog
-Russian / На русском: https://github.com/damiansirbu-stalker/DiegeticControl/blob/main/doc/readme_ru.txt
+Changelog: https://github.com/damiansirbu-stalker/DiegeticControl/blob/main/doc/changelog | Health: https://damiansirbu-stalker.github.io/DiegeticControl/health/ | JitProfiler: https://damiansirbu-stalker.github.io/DiegeticControl/jitprofiler/ | Bugs: https://github.com/damiansirbu-stalker/DiegeticControl/issues | Russian / На русском: https://github.com/damiansirbu-stalker/DiegeticControl/blob/main/doc/readme_ru.txt
 
 My work:
 GitHub: https://github.com/orgs/damiansirbu-stalker/repositories
@@ -51,21 +50,12 @@ Radio_Remastered or similar (for radio/megaphone control)
 Guitar Animation by Daiviey (optional, for guitar control)
 Harmonica by Daiviey (optional, for harmonica control)
 
-Install (MO2):
-1. Install xlibs
-2. Install DiegeticControl
-3. Load order does not matter
-4. Configure via MCM
-
-Uninstall (MO2):
-Disable or remove in MO2.
-
 Configuration:
 All settings in MCM under DiegeticControl. All defaults are 1.0 (unchanged from game behavior).
 
 Compatibility:
-Coexists with the mods it controls. It hooks ph_sound, guitar_anim, and harmonica_anim, and a control is inactive when its mod is absent.
-Tested with Anomaly 1.5.3, GAMMA, and Forgotten Zone.
+Depends only on xlibs. Install and uninstall mid-save work. Tested: Anomaly 1.5.3, GAMMA, EFP, Zona, Forgotten Zone.
+It coexists with everything else.
 
 How It's Built:
 
@@ -83,8 +73,7 @@ The mod avoids writing engine values, holding its own state in parallel. Any val
 The family runs on one rulebook through xlibs. Every rule, policy, and check is one shared implementation, the same protection, distances, faction logic, and combat reads in every mod.
 It depends on no other mod, not even my own. The only shared layers are X-Ray and xlibs.
 
-[Screenshot: DiegeticControl under JitProfiler, a live CPU and allocation capture]
-Project Health: https://damiansirbu-stalker.github.io/DiegeticControl/
+That pipeline runs on every commit and publishes what it finds. The header links a live health page and a JitProfiler capture of the mod's real CPU and allocation cost.
 
 Credits:
 Altogolik - support, ideas, source materials
