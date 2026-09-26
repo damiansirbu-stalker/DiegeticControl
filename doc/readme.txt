@@ -15,24 +15,26 @@ X-Ray Monolith: https://github.com/themrdemonized/xray-monolith
 
 [ Hero image: diegeticcontrol-hero.gif - per-source control of in-world sound ]
 
-Anomaly has no way to control the volume of radios, megaphones, guitars, and harmonicas independently from the game's audio sliders. You can't turn down Duty propaganda without killing ambient sounds. DiegeticControl fixes this.
+Anomaly has no way to control the volume of radios, megaphones, guitars, and harmonicas independently from the game's audio sliders.
+You can't turn down Duty propaganda without killing ambient sounds. DiegeticControl fixes this.
 
-The mod hooks directly into the audio subsystems that play in-world sound: ph_sound for radios and megaphones, guitar_anim for campfire guitar, harmonica_anim for harmonica. Each source gets its own volume slider, enable/disable toggle, and where applicable a pause multiplier that controls silence between tracks or announcements.
+The mod hooks directly into the audio subsystems that play in-world sound: ph_sound for radios and megaphones, guitar_anim for campfire guitar, harmonica_anim for harmonica.
+Each source gets its own volume slider, enable/disable toggle, and where applicable a pause multiplier that controls silence between tracks or announcements.
 
 A master volume multiplier sits on top of everything. All changes apply immediately through MCM.
 
-Missing dependencies are handled gracefully. If you don't have the guitar or harmonica mods installed, those controls simply do nothing.
+Missing dependencies are handled gracefully. If you don't have the guitar or harmonica mods installed, those controls do nothing.
 
 Features:
 
 Radios:
-  Volume control for faction base radios and music
-  Pause multiplier between tracks (longer silence or shorter)
+  Controls the volume of faction base radios and music
+  Controls the pause between tracks, longer or shorter
   Enable/disable toggle
 
 Megaphones:
-  Volume control for Duty propaganda, Arena announcer, alarms
-  Pause multiplier between announcements
+  Controls the volume of Duty propaganda, the Arena announcer, and alarms
+  Controls the pause between announcements
   Enable/disable toggle
 
 Guitar:
@@ -50,9 +52,9 @@ Anomaly 1.5.3
 Modded exes: themrdemonized 20250908 or newer, or AOEngine v0.55 or newer. The full feature set needs the latest demonized build. A feature that needs a newer one stays inactive on older exes.
 xlibs (https://www.moddb.com/mods/stalker-anomaly/addons/xlibs-1001)
 MCM
-Radio_Remastered or similar (for radio/megaphone control)
-Guitar Animation by Daiviey (optional, for guitar control)
-Harmonica by Daiviey (optional, for harmonica control)
+Radio_Remastered or similar provides the radio and megaphone sources
+Guitar Animation by Daiviey provides the campfire guitar (optional)
+Harmonica by Daiviey provides the harmonica (optional)
 
 Configuration:
 All settings in MCM under DiegeticControl. All defaults are 1.0 (unchanged from game behavior).
@@ -80,7 +82,7 @@ It depends on no other mod, not even the author's own. The only shared layers ar
 That pipeline runs on every commit and publishes what it finds. The header links a live health page and a JitProfiler capture of the mod's real CPU and allocation cost.
 
 Credits:
-Altogolik - support, ideas, source materials
+Altogolik provided support, ideas, and source materials.
 
 Usage and License:
   Modpacks: allowed and encouraged. Keep the readme and license files.
