@@ -1,21 +1,12 @@
-Version: 1.1.0 (xlibs 1.9.0, demonized 20250908)<br />
-<a href="https://github.com/damiansirbu-stalker/DiegeticControl/blob/main/doc/changelog">Changelog</a><br />
-<a href="https://damiansirbu-stalker.github.io/DiegeticControl/health/">Health</a><br />
-<a href="https://damiansirbu-stalker.github.io/DiegeticControl/jitprofiler/">JitProfiler</a><br />
-<a href="https://github.com/damiansirbu-stalker/DiegeticControl/issues">Bugs</a><br />
-<a href="https://github.com/damiansirbu-stalker/DiegeticControl/blob/main/doc/readme_ru.txt">Russian / На русском</a><br />
-<br />
-My work:<br />
-<a href="https://github.com/orgs/damiansirbu-stalker/repositories">GitHub</a><br />
-<a href="https://www.moddb.com/members/damian-sirbu/addons">ModDB</a><br />
-<a href="https://www.nexusmods.com/profile/damiansirbu/mods">Nexus</a><br />
-<br />
-My contributions:<br />
-<a href="https://github.com/themrdemonized/xray-monolith">X-Ray Monolith</a><br />
-<br />
-<br />
-! Reset MCM settings to defaults after updating !<br />
-<br />
+<div style="border-top:1px solid #555555;width:40%;margin:20px auto;">&#8203;</div>
+<div style="text-align:center;">
+<h2>Version 1.1.0 (xlibs 1.9.0, demonized 20250908)</h2>
+<h3><a href="https://github.com/damiansirbu-stalker/DiegeticControl/blob/main/doc/changelog">Changelog</a>&nbsp;&middot;&nbsp;<a href="https://damiansirbu-stalker.github.io/DiegeticControl/health/">Health</a>&nbsp;&middot;&nbsp;<a href="https://damiansirbu-stalker.github.io/DiegeticControl/jitprofiler/">JitProfiler</a>&nbsp;&middot;&nbsp;<a href="https://github.com/damiansirbu-stalker/DiegeticControl/issues">Bugs</a>&nbsp;&middot;&nbsp;<a href="https://github.com/damiansirbu-stalker/DiegeticControl/blob/main/doc/readme_ru.txt">Russian / На русском</a></h3>
+<div><span style="font-weight:bold;">My work:</span>&nbsp;&nbsp;<a href="https://github.com/orgs/damiansirbu-stalker/repositories">GitHub</a>&nbsp;&middot;&nbsp;<a href="https://www.moddb.com/members/damian-sirbu/addons">ModDB</a>&nbsp;&middot;&nbsp;<a href="https://www.nexusmods.com/profile/damiansirbu/mods">Nexus</a></div>
+<div style="margin-top:6px;"><span style="font-weight:bold;">My contributions:</span>&nbsp;&nbsp;<a href="https://github.com/themrdemonized/xray-monolith">X-Ray Monolith</a></div>
+<h3><span style="color:#e03b2f;">! Reset MCM settings to defaults after updating !</span></h3>
+</div>
+<div style="border-top:1px solid #555555;width:40%;margin:20px auto;">&#8203;</div>
 Anomaly has no way to control the volume of radios, megaphones, guitars, and harmonicas independently from the game's audio sliders.<br />
 You can't turn down Duty propaganda without killing ambient sounds. DiegeticControl fixes this.<br />
 <br />
@@ -25,30 +16,30 @@ Each source gets its own volume slider, enable/disable toggle, and where applica
 A master volume multiplier sits on top of everything. All changes apply immediately through MCM.<br />
 <br />
 Missing dependencies are handled gracefully. If you don't have the guitar or harmonica mods installed, those controls do nothing.<br />
+<div style="border-top:1px solid #555555;width:40%;margin:20px auto;">&#8203;</div>
+<h3>Features</h3>
 <br />
-Features:<br />
-<br />
-Radios:<br />
+<span style="font-weight:bold;">Radios</span><br />
   Controls the volume of faction base radios and music<br />
   Controls the pause between tracks, longer or shorter<br />
   Enable/disable toggle<br />
 <br />
-Megaphones:<br />
+<span style="font-weight:bold;">Megaphones</span><br />
   Controls the volume of Duty propaganda, the Arena announcer, and alarms<br />
   Controls the pause between announcements<br />
   Enable/disable toggle<br />
 <br />
-Guitar:<br />
+<span style="font-weight:bold;">Guitar</span><br />
   Volume control for campfire guitar (requires Guitar Animation mod)<br />
   Enable/disable toggle<br />
 <br />
-Harmonica:<br />
+<span style="font-weight:bold;">Harmonica</span><br />
   Volume control for harmonica (requires Harmonica mod)<br />
   Enable/disable toggle<br />
 <br />
 Master volume multiplier applied to all sources<br />
-<br />
-Requirements:<br />
+<div style="border-top:1px solid #555555;width:40%;margin:20px auto;">&#8203;</div>
+<h3>Requirements</h3>
 Anomaly 1.5.3<br />
 Modded exes: themrdemonized 20250908 or newer, or AOEngine v0.55 or newer. The full feature set needs the latest demonized build. A feature that needs a newer one stays inactive on older exes.<br />
 xlibs (https://www.moddb.com/mods/stalker-anomaly/addons/xlibs-1001)<br />
@@ -57,14 +48,14 @@ Radio_Remastered or similar provides the radio and megaphone sources<br />
 Guitar Animation by Daiviey provides the campfire guitar (optional)<br />
 Harmonica by Daiviey provides the harmonica (optional)<br />
 <br />
-Configuration:<br />
+<h3>Configuration</h3>
 All settings in MCM under DiegeticControl. All defaults are 1.0 (unchanged from game behavior).<br />
 <br />
-Compatibility:<br />
+<h3>Compatibility</h3>
 Depends only on xlibs. Install and uninstall mid-save work. Tested: Anomaly 1.5.3, GAMMA, EFP, Zona, Forgotten Zone.<br />
 It coexists with everything else.<br />
-<br />
-How It's Built:<br />
+<div style="border-top:1px solid #555555;width:40%;margin:20px auto;">&#8203;</div>
+<span style="font-weight:bold;">How It's Built</span><br />
 <br />
 The code and patterns are original, built on best practices from the best STALKER modders and hands-on reverse-engineering of X-Ray.<br />
 The design stays engine-native and minimal, with event-native pub/sub not polling, work spread across frames via deferred queues and rate limiters, and per-level caches replacing world scans.<br />
@@ -78,17 +69,17 @@ Every rate, threshold, and toggle is exposed through MCM or LTX with nothing lef
 It runs on one xlibs rulebook shared across the whole mod family, the same protection, distances, faction logic, and combat reads in every mod.<br />
 It depends on no other mod, not even the author's own, and needs only X-Ray and xlibs beneath it.<br />
 See the Health and JitProfiler links up top for every test and smoke result, and the mod's real CPU and allocation cost.<br />
-<br />
-Credits:<br />
+<div style="border-top:1px solid #555555;width:40%;margin:20px auto;">&#8203;</div>
+<h3>Credits</h3>
 Altogolik provided support, ideas, and source materials.<br />
 <br />
-Usage and License:<br />
+<h3>Usage and License</h3>
   Modpacks: allowed and encouraged. Keep the readme and license files.<br />
   Addons, patches, integrations: allowed. Credit "DiegeticControl by Damian Sirbu" visibly on your mod page.<br />
   Reproducing the implementation in other software: not allowed, even with credit.<br />
   The full license is in the LICENSE file and on GitHub.<br />
 <br />
-Diagnostics and reporting:<br />
+<h3>Diagnostics and reporting</h3>
 Every release goes through careful engineering and testing, but bugs can still slip through.<br />
 To report one, reproduce with debug logging on, and the world log where the mod has one.<br />
 First rule this mod out: reproduce with it off, then on. The cleanest test is this mod alone on vanilla and xlibs.<br />
