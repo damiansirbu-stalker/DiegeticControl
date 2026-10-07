@@ -67,7 +67,7 @@ All settings in MCM under DiegeticControl. All defaults are 1.0 (unchanged from 
 
 Compatibility:
 Depends only on xlibs. Install and uninstall mid-save work. Tested: Anomaly 1.5.3, GAMMA, EFP, Zona, Forgotten Zone.
-It coexists with everything else.
+Everything else coexists, as long as it extends X-Ray and Anomaly and never overrides them.
 
 How It's Built:
 
