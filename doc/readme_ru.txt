@@ -76,7 +76,7 @@ Anomaly 1.5.3
 Modded exes: themrdemonized 20250908 или новее, либо AOEngine v0.55 или новее. Полный набор возможностей требует последней сборки demonized. Возможность, которой нужна более новая сборка, остаётся неактивной на старых exe.
 xlibs (https://www.moddb.com/mods/stalker-anomaly/addons/xlibs-1001)
 MCM
-Radio_Remastered или похожий даёт источники радио и мегафонов
+Radio_Remastered (https://www.moddb.com/mods/stalker-anomaly/addons/anomaly-radios-extended-full-remaster-152) или похожий даёт источники радио и мегафонов
 Guitar Animation от Daiviey даёт гитару у костра (опционально)
 Harmonica от Daiviey даёт гармонику (опционально)
 
