@@ -33,6 +33,7 @@ Integrations:
   Stealth Overhaul: https://github.com/Alex-leon1594/Stealth_Overhaul_Reworked
   TALKER: https://www.moddb.com/mods/stalker-anomaly/addons/talker-ai-powered-npc-dialogue-beta
   Factions of the Zone: https://github.com/devinhorowitz/factionsofthezone
+  Anomaly Radios Extended: https://www.moddb.com/mods/stalker-anomaly/addons/anomaly-radios-extended-full-remaster-152
 Collaborations:
   xAGNA: https://www.moddb.com/mods/stalker-anomaly/addons/xagna
 
@@ -82,7 +83,7 @@ Anomaly 1.5.3
 Modded exes: themrdemonized 20250908 or newer, or AOEngine v0.55 or newer. The full feature set needs the latest demonized build. A feature that needs a newer one stays inactive on older exes.
 xlibs (https://www.moddb.com/mods/stalker-anomaly/addons/xlibs-1001)
 MCM
-Radio_Remastered (https://www.moddb.com/mods/stalker-anomaly/addons/anomaly-radios-extended-full-remaster-152) or similar provides the radio and megaphone sources
+Anomaly Radios Extended (https://www.moddb.com/mods/stalker-anomaly/addons/anomaly-radios-extended-full-remaster-152) or similar provides the radio and megaphone sources
 Guitar Animation by Daiviey provides the campfire guitar (optional)
 Harmonica by Daiviey provides the harmonica (optional)
 
