@@ -23,21 +23,28 @@ English / По-английски: https://github.com/damiansirbu-stalker/Dieget
   X-Ray Monolith: https://github.com/themrdemonized/xray-monolith/pulls?q=is%3Apr+author%3Adamiansirbu+is%3Amerged
   OpenXRay: https://github.com/OpenXRay/xray-16/pulls?q=is%3Apr+author%3Adamiansirbu+is%3Amerged
   IX-Ray: https://github.com/ixray-team/ixray-1.6-stcop/commits/develop?author=damiansirbu
-Интеграции:
-  Word of Mouth: https://www.moddb.com/mods/stalker-anomaly/addons/word-of-mouth
-  Warfare (erepb): https://www.moddb.com/mods/stalker-anomaly/addons/warfare-alife-overhaul-new
-  Stealth Overhaul: https://github.com/Alex-leon1594/Stealth_Overhaul_Reworked
+Зависимые моды:
   COMPASS: https://github.com/Crimento/COMPASS
+  Nemesis Spawn System: https://github.com/SirEndet/Nemesis-Spawn-System
+  Word of Mouth: https://www.moddb.com/mods/stalker-anomaly/addons/word-of-mouth
+Интеграции:
+  Warfare (erepb): https://www.moddb.com/mods/stalker-anomaly/addons/warfare-alife-overhaul-new
+  Homestead: https://www.moddb.com/mods/stalker-anomaly/addons/homestead-stalker-settlement-builder
+  Stealth Overhaul: https://github.com/Alex-leon1594/Stealth_Overhaul_Reworked
+  TALKER: https://www.moddb.com/mods/stalker-anomaly/addons/talker-ai-powered-npc-dialogue-beta
+  Factions of the Zone: https://github.com/devinhorowitz/factionsofthezone
+  Anomaly Radios Extended: https://www.moddb.com/mods/stalker-anomaly/addons/anomaly-radios-extended-full-remaster-152
 Сотрудничество:
   xAGNA: https://www.moddb.com/mods/stalker-anomaly/addons/xagna
 
 [ Hero image: diegeticcontrol-hero.gif - управление громкостью каждого источника в мире ]
 
-Спасибо за поддержку, но донаты мне не нужны. Куда полезнее отзывы, оценки и грамотные баг-репорты.
-Организованная группа копирует мои работы, ежедневно распространяет ложь и массово занижает оценки моим модам.
-Мой код открыт, присутствует в большинстве модпаков и интегрируется с известными проектами.
+Мои работы бесплатны и открыты, входят в большинство модпаков и интегрируются с известными проектами.
+Организованная группа копирует мои работы, клевещет на меня, выдаёт себя за меня и устраивает ревью-бомбинг на всех площадках.
+Помочь можно отзывом, оценкой, грамотным баг-репортом или кофе на Ko-fi: https://ko-fi.com/damiansirbu
 
-! После обновления: MCM > Development > Reset ALL to Defaults !
+Каждый релиз стабилен, и в нём могут появиться целые новые системы. Всегда разбирайтесь в документации.
+После каждого обновления используйте Reset ALL to Defaults в MCM, в разделе Development.
 
 В Anomaly нет способа управлять громкостью радио, мегафонов, гитар и губных гармоник независимо от игровых ползунков звука.
 Нельзя приглушить пропаганду Долга, не убив при этом окружающие звуки. DiegeticControl это исправляет.
@@ -76,7 +83,7 @@ Anomaly 1.5.3
 Modded exes: themrdemonized 20250908 или новее, либо AOEngine v0.55 или новее. Полный набор возможностей требует последней сборки demonized. Возможность, которой нужна более новая сборка, остаётся неактивной на старых exe.
 xlibs (https://www.moddb.com/mods/stalker-anomaly/addons/xlibs-1001)
 MCM
-Radio_Remastered (https://www.moddb.com/mods/stalker-anomaly/addons/anomaly-radios-extended-full-remaster-152) или похожий даёт источники радио и мегафонов
+Anomaly Radios Extended (https://www.moddb.com/mods/stalker-anomaly/addons/anomaly-radios-extended-full-remaster-152) или похожий даёт источники радио и мегафонов
 Guitar Animation от Daiviey даёт гитару у костра (опционально)
 Harmonica от Daiviey даёт гармонику (опционально)
 
@@ -112,11 +119,11 @@ Altogolik помог поддержкой, идеями и исходными м
   Полная лицензия в файле LICENSE и на GitHub.
 
 Диагностика и отчёты:
-  Каждый релиз проходит тщательную разработку и тестирование, но баги всё равно могут проскользнуть.
-  Чтобы сообщить об одном, воспроизведите с включённым отладочным логированием и приложите лог мира, где у мода он есть.
-  Сначала исключите этот мод: воспроизведите с ним выключенным, затем включённым. Самый чистый тест - этот мод один на ванильной Anomaly с xlibs.
-  Отправьте трассировки в Discord Anomaly или заведите дефект на GitHub с той же информацией.
-  Приложите xray.log, лог мода, сборку движка, модлист и порядок загрузки.
-  Для глубоких технических деталей и механизмов смотрите документацию по архитектуре на GitHub.
+Каждый релиз проходит тщательную разработку и тестирование, но баги всё равно могут проскользнуть.
+Чтобы сообщить о баге, воспроизведите с включённым отладочным логированием и приложите лог мира, где у мода он есть.
+Сначала исключите этот мод: воспроизведите с ним выключенным, затем включённым. Самый чистый тест - этот мод один на ванильной Anomaly с xlibs.
+Отправьте трассировки в Discord Anomaly или заведите дефект на GitHub с той же информацией.
+Приложите xray.log, лог мода, сборку движка, модлист и порядок загрузки.
+Для глубоких технических деталей и механизмов смотрите документацию по архитектуре на GitHub.
 
 Tags: engine-native, performance, save-safe, diegetic, audio, audio-mixer, volume-control, per-source-volume, live-control, immersion, quality-of-life, reverse-engineering
