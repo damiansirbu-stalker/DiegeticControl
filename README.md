@@ -3,7 +3,7 @@
 A volume-control layer for in-world audio sources: radios, megaphones, guitars and harmonicas, each hooked into the subsystem that plays it.
 Every source has its own volume and toggle, with a master on top, and changes apply live through MCM.
 
-[ModDB](https://www.moddb.com/mods/stalker-anomaly/addons/diegetic-audio-control-100) | [Releases](https://github.com/damiansirbu-stalker/DiegeticControl/releases) | [Bugs, suggestions](https://github.com/damiansirbu-stalker/DiegeticControl/issues)
+[![ModDB](https://img.shields.io/badge/ModDB-c8102e)](https://www.moddb.com/mods/stalker-anomaly/addons/diegeticcontrol) [![Nexus Mods](https://img.shields.io/badge/Nexus_Mods-da8e35)](https://www.nexusmods.com/stalkeranomaly/mods/105) [![Releases](https://img.shields.io/badge/Releases-24292f?logo=github&logoColor=white)](https://github.com/damiansirbu-stalker/DiegeticControl/releases) [![Bugs, suggestions](https://img.shields.io/badge/Bugs%2C_suggestions-24292f?logo=github&logoColor=white)](https://github.com/damiansirbu-stalker/DiegeticControl/issues) [![Ko-fi](https://img.shields.io/badge/Ko--fi-ff5e5b?logo=kofi&logoColor=white)](https://ko-fi.com/damiansirbu)
 
 [![ci](https://github.com/damiansirbu-stalker/DiegeticControl/actions/workflows/ci.yml/badge.svg)](https://github.com/damiansirbu-stalker/DiegeticControl/actions/workflows/ci.yml) [![Project Health](https://img.shields.io/badge/project_health-dashboard-00ced1)](https://damiansirbu-stalker.github.io/DiegeticControl/)
 
