@@ -43,9 +43,6 @@ My work is free and open source, ships in most modpacks, and integrates with est
 An organized group copies my work, defames, impersonates and review-bombs me across platforms.
 You can help with a review, a rating, a proper bug report, or a coffee on Ko-fi: https://ko-fi.com/damiansirbu
 
-Every release is stable and whole new systems may appear. Always understand the documentation.
-After every update, use Reset ALL to Defaults in MCM under Development.
-
 Anomaly has no way to control the volume of radios, megaphones, guitars, and harmonicas independently from the game's audio sliders.
 You can't turn down Duty propaganda without killing ambient sounds. DiegeticControl fixes this.
 
