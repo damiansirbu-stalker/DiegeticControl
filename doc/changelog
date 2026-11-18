@@ -1,60 +1,85 @@
 1.1.1-snapshot
 
 1.1.0
-  Summary: performance and infrastructure
+  The DiegeticControl name, a new MCM banner and the xlibs 1.9.0 floor
+    AlifeDiegetic is now DiegeticControl, part of the Diegetic sound family, with a new MCM banner and a separate diegeticcontrol.log.
+    From this release the mod needs xlibs 1.9.0 or newer.
 
-  Performance and Infrastructure
-    - Rebuilt the validator into layered rules for crashes, unsafe engine usage, performance, best practices, smoke load, and secret leaks.
-    - The validator runs on every change, locally and in CI, and a grade gate fails the build on any finding.
-    - Profiled and tuned with JitProfiler, an engine-native, scientific profiler.
-    - Consolidated the whole engine layer into xlibs and standardized naming and structure across every mod.
+  - Changed the mod name to DiegeticControl in the MCM, the banner and the log, which is now diegeticcontrol.log.
+  - Changed the xlibs requirement to 1.9.0.
 
 1.0.9
-  Renamed: now DiegeticControl, part of the Diegetic audio family.
-  Fixed: radio and megaphone volume holds steady at the set level, and returning a frequency slider to default restores the original timing.
-  Fixed: MCM volume-slider and toggle labels now display in both English and Russian.
-  Compatibility:
-    Requires xlibs 1.8.4 and themrdemonized modded exes 20250908+ or AOEngine v0.55+.
-    Added: platform status in the MCM footer and boot log, matching the Alife family, showing the exact engine build and whether it is fully or partially compatible.
+  The AlifeDiegetic name, steady radio volume, and the modded exes check
+    Diegetic Audio Control is now AlifeDiegetic. Radio and megaphone volume holds at the level you set, and the MCM footer shows the platform status.
+    The load check now stops the game with a message when the modded exes are missing or too old, and when xlibs is older than 1.8.4.
+
+  - Changed the mod name to AlifeDiegetic in the MCM and the log, which is now alifediegetic.log.
+  - Fixed radio and megaphone volume drifting from the level you set. A frequency slider back at its default restores the original timing.
+  - Fixed the volume slider and toggle labels, which now show in English and Russian.
+  - Added the modded exes check. The game stops at load with a message when it finds neither demonized 20250908 or newer nor AOEngine.
+  - Added the platform status to the MCM footer and the log. It names the exe build and how much of the mod that build supports.
+  - Changed the xlibs requirement to 1.8.4.
 
 1.0.8
-  Compatibility:
-    Removed: modded exes requirement. Works with vanilla Anomaly 1.5.3, Demonized, Demonized MT, AOEngine. Tested with GAMMA, EFP, Zona.
+  The xlibs 1.3.0 requirement
+    This release runs on xlibs 1.3.0, on vanilla Anomaly 1.5.3 as well as on the modded exes.
+
+  - Changed the xlibs requirement to 1.3.0.
 
 1.0.7
-  Changed: xlibs 1.2.5 dependency.
+  The xlibs 1.2.5 requirement
+    This release runs on xlibs 1.2.5, and the load check accepts any newer compatible version.
+
+  - Changed the xlibs requirement to 1.2.5.
 
 1.0.6
-  Added: timed event scheduling works correctly with major modpacks (globals resolve at call time for demonized_time_events compatibility)
-  Added: version displayed at startup (mod + xlibs)
-  Changed: MCM visual refresh
-  Fixed: dep gate version check uses correct xlibs API
-  Fixed: Russian MCM encoding restored (windows-1251)
+  A timer fix, the MCM banner and the Russian MCM restored
+    The radio and megaphone timers work in modpacks that replace the vanilla timer queue, and the Russian MCM reads correctly again.
+    A banner and the mod version now sit on the MCM, and the log names the mod and xlibs versions at startup.
+
+  - Fixed the timers in modpacks that replace the vanilla timer queue, such as demonized time events.
+  - Fixed the Russian MCM text, which showed broken characters. The file is back in windows-1251.
+  - Fixed the xlibs check calling an xlibs function that no longer exists.
+  - Added the MCM banner and the mod version, and the mod and xlibs versions to the log at startup.
 
 1.0.5
-  xlibs 1.2.3 dependency.
+  The xlibs 1.2.3 requirement
+    This release runs on xlibs 1.2.3, and the load check accepts any newer compatible version.
+
+  - Changed the xlibs requirement to 1.2.3.
 
 1.0.4
-  Changed: xlibs dependency updated to 1.2.1
+  The xlibs 1.2.1 requirement
+    This release runs on xlibs 1.2.1, and the load check asks for that exact version.
+
+  - Changed the xlibs requirement to 1.2.1.
 
 1.0.3
-  MCM snapshot pattern and performance improvements.
-  Changed: MCM configuration uses snapshot pattern (xmcm.create_config) for faster reads
-  Changed: MCM reset button support (mcm_option_restore_default callback)
-  Fixed: uncached engine globals (CreateTimeEvent, RegisterScriptCallback)
-  Changed: xlibs dependency updated to 1.2.0
+  The MCM reset button and faster settings reads
+    The MCM reset button now restores every setting, and the mod reads its settings from a snapshot.
+
+  - Added support for the MCM reset button.
+  - Improved settings performance. The mod reads a snapshot of the MCM values in place of a query per sound.
+  - Changed the xlibs requirement to 1.2.0.
 
 1.0.2
-  Fixed: dependency gate uses exact version match instead of string comparison
+  An exact xlibs version check
+    The load check now matches the xlibs version exactly, where it used to compare the version as text.
+
+  - Fixed the xlibs check comparing versions as text. It now asks for the exact version.
 
 1.0.1
-  Dependency gate and Russian translation.
-  Added: dependency gate - clear error message if xlibs is missing or outdated
-  Added: Russian translation
+  The xlibs check and the Russian translation
+    From this release the mod checks the xlibs version at load, and the MCM reads in Russian.
+
+  - Added the xlibs check at load, with a message when xlibs is missing or outdated.
+  - Added the Russian translation.
 
 1.0.0
-  First release. Volume and pause control for radios, megaphones, guitar, harmonica.
-  Added: per-source volume sliders with master multiplier
-  Added: pause/frequency control for radios and megaphones
-  Added: per-source enable/disable toggles
-  Added: graceful handling of missing audio mods
+  Volume and pause control for radios, megaphones, the guitar and the harmonica
+    The first release sets how loud each in-world source plays, and how often radios and megaphones speak.
+
+  - Added a volume slider for each source, under a master volume.
+  - Added a frequency slider for radios and megaphones, which stretches or shortens the pause between their broadcasts.
+  - Added a toggle for each source.
+  - Added a quiet fallback when the guitar or the harmonica mod is missing.
