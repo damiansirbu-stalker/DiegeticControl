@@ -7,60 +7,111 @@
     <text>DiegeticControl</text>
   </string>
   <string id="ui_mcm_dc_desc_master">
-    <text>Общий множитель для всего звука ниже</text>
+    <text>DiegeticControl задаёт громкость каждого источника звука в мире отдельно от игровых ползунков звука. Изменение применяется сразу, как только вы двигаете ползунок.</text>
   </string>
-  <string id="ui_mcm_dc_master_volume">
-    <text>Общая громкость (по умолчанию: 1.0 = без изменений)</text>
+  <string id="ui_mcm_dc_general_master_volume">
+    <text>Общая громкость (x)</text>
+  </string>
+  <string id="ui_mcm_dc_general_master_volume_desc">
+    <text>Умножает громкость всех источников на этой странице и всех остальных скриптовых звуков мира. 1.0 - громкость игры.</text>
   </string>
   <string id="ui_mcm_dc_desc_radio">
-    <text>Радио на базах фракций и музыка</text>
+    <text>Радио на базах, у торговцев и в лагерях, и музыка, которую они играют.</text>
   </string>
-  <string id="ui_mcm_dc_radio_enabled">
-    <text>Включить радио</text>
+  <string id="ui_mcm_dc_general_radio_enabled">
+    <text>Радио</text>
   </string>
-  <string id="ui_mcm_dc_radio_volume">
-    <text>Громкость радио (по умолчанию: 1.0)</text>
+  <string id="ui_mcm_dc_general_radio_enabled_desc">
+    <text>Выключено - все радио молчат.</text>
   </string>
-  <string id="ui_mcm_dc_radio_frequency">
-    <text>Пауза между треками (по умолчанию: 1.0) - больше = дольше тишина</text>
+  <string id="ui_mcm_dc_general_radio_volume">
+    <text>Громкость радио (x)</text>
+  </string>
+  <string id="ui_mcm_dc_general_radio_volume_desc">
+    <text>Умножает собственную громкость каждого радио. 1.0 - громкость игры.</text>
+  </string>
+  <string id="ui_mcm_dc_general_radio_frequency">
+    <text>Пауза между треками (x)</text>
+  </string>
+  <string id="ui_mcm_dc_general_radio_frequency_desc">
+    <text>Растягивает тишину между треками. Выше 1.0 радио ждёт дольше, ниже 1.0 играет чаще.</text>
   </string>
   <string id="ui_mcm_dc_desc_megaphone">
-    <text>Пропаганда Долга, диктор Арены, тревоги</text>
+    <text>Пропаганда Долга, диктор Арены, тревоги и объявления.</text>
   </string>
-  <string id="ui_mcm_dc_megaphone_enabled">
-    <text>Включить мегафоны</text>
+  <string id="ui_mcm_dc_general_megaphone_enabled">
+    <text>Мегафоны</text>
   </string>
-  <string id="ui_mcm_dc_megaphone_volume">
-    <text>Громкость мегафонов (по умолчанию: 1.0)</text>
+  <string id="ui_mcm_dc_general_megaphone_enabled_desc">
+    <text>Выключено - все мегафоны молчат.</text>
   </string>
-  <string id="ui_mcm_dc_megaphone_frequency">
-    <text>Пауза между объявлениями (по умолчанию: 1.0) - больше = дольше тишина</text>
+  <string id="ui_mcm_dc_general_megaphone_volume">
+    <text>Громкость мегафонов (x)</text>
+  </string>
+  <string id="ui_mcm_dc_general_megaphone_volume_desc">
+    <text>Умножает собственную громкость каждого мегафона. 1.0 - громкость игры.</text>
+  </string>
+  <string id="ui_mcm_dc_general_megaphone_frequency">
+    <text>Пауза между объявлениями (x)</text>
+  </string>
+  <string id="ui_mcm_dc_general_megaphone_frequency_desc">
+    <text>Растягивает тишину между объявлениями. Выше 1.0 мегафон ждёт дольше, ниже 1.0 говорит чаще.</text>
   </string>
   <string id="ui_mcm_dc_desc_guitar">
-    <text>Гитара у костра (требуется мод Guitar Animation)</text>
+    <text>Гитара, на которой играете вы, из аддона Guitar Animation. Без аддона этот раздел ничего не делает.</text>
   </string>
-  <string id="ui_mcm_dc_guitar_enabled">
-    <text>Включить гитару</text>
+  <string id="ui_mcm_dc_general_guitar_enabled">
+    <text>Гитара</text>
   </string>
-  <string id="ui_mcm_dc_guitar_volume">
-    <text>Громкость гитары (по умолчанию: 1.0)</text>
+  <string id="ui_mcm_dc_general_guitar_enabled_desc">
+    <text>Выключено - гитара ничего не играет.</text>
+  </string>
+  <string id="ui_mcm_dc_general_guitar_volume">
+    <text>Громкость гитары (x)</text>
+  </string>
+  <string id="ui_mcm_dc_general_guitar_volume_desc">
+    <text>Умножает громкость гитары. 1.0 - громкость аддона.</text>
   </string>
   <string id="ui_mcm_dc_desc_harmonica">
-    <text>Губная гармоника (требуется мод Harmonica)</text>
+    <text>Губная гармоника, на которой играете вы, из аддона Harmonica. Без аддона этот раздел ничего не делает.</text>
   </string>
-  <string id="ui_mcm_dc_harmonica_enabled">
-    <text>Включить гармонику</text>
+  <string id="ui_mcm_dc_general_harmonica_enabled">
+    <text>Гармоника</text>
   </string>
-  <string id="ui_mcm_dc_harmonica_volume">
-    <text>Громкость гармоники (по умолчанию: 1.0)</text>
+  <string id="ui_mcm_dc_general_harmonica_enabled_desc">
+    <text>Выключено - гармоника ничего не играет.</text>
   </string>
-  <string id="ui_mcm_dc_desc_debug">
-    <text>Логирование в консоль для диагностики</text>
+  <string id="ui_mcm_dc_general_harmonica_volume">
+    <text>Громкость гармоники (x)</text>
   </string>
-  <string id="ui_mcm_dc_debug_mode">
-    <text>Режим отладки</text>
+  <string id="ui_mcm_dc_general_harmonica_volume_desc">
+    <text>Умножает громкость гармоники. 1.0 - громкость аддона.</text>
   </string>
-  <string id="ui_mcm_dc_footer">
-    <text>Усиление громкости выше 2x может давать всё меньший эффект из-за ограничений движка</text>
+  <string id="ui_mcm_menu_general">
+    <text>Общее</text>
+  </string>
+  <string id="ui_mcm_menu_development">
+    <text>Разработка</text>
+  </string>
+  <string id="ui_mcm_dc_development_desc">
+    <text>Здесь инструменты для баг-репорта и для чистого старта. Отладочный лог пишет каждый звук, который мод настраивает, в diegeticcontrol.log.</text>
+  </string>
+  <string id="ui_mcm_dc_development_debug_mode">
+    <text>Отладочный лог</text>
+  </string>
+  <string id="ui_mcm_dc_development_debug_mode_desc">
+    <text>Записывает тему и громкость каждого радио или мегафона, которые настраивает мод.</text>
+  </string>
+  <string id="ui_mcm_dc_development_reset_warning">
+    <text>Внимание: сначала сохраните или отмените незавершённые изменения MCM, иначе они перезапишут сброс при следующем нажатии «Применить».</text>
+  </string>
+  <string id="ui_mcm_dc_development_btn_reset_all">
+    <text>Сбросить к значениям по умолчанию</text>
+  </string>
+  <string id="ui_mcm_dc_development_btn_reset_all_desc">
+    <text>Возвращает каждую настройку DiegeticControl к значению по умолчанию. Используйте после обновления, которое изменило меню.</text>
+  </string>
+  <string id="st_dc_reset_all_done">
+    <text>DiegeticControl: все настройки сброшены к значениям по умолчанию.</text>
   </string>
 </string_table>

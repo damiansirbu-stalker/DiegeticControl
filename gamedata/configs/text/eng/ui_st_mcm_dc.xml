@@ -8,67 +8,116 @@
     </string>
 
     <string id="ui_mcm_dc_desc_master">
-        <text>Global multiplier applied to all audio below</text>
+        <text>DiegeticControl sets the volume of each in-world sound source on its own, apart from the game's audio sliders. A change applies the moment you move a slider.</text>
     </string>
-    <string id="ui_mcm_dc_master_volume">
-        <text>Master Volume (default: 1.0 = unchanged)</text>
+    <string id="ui_mcm_dc_general_master_volume">
+        <text>Master volume (x)</text>
+    </string>
+    <string id="ui_mcm_dc_general_master_volume_desc">
+        <text>Multiplies every source on this page and every other scripted world sound. 1.0 is the game's volume.</text>
     </string>
 
     <string id="ui_mcm_dc_desc_radio">
-        <text>Faction base radios and music</text>
+        <text>Base, trader and camp radios and the music they play.</text>
     </string>
-    <string id="ui_mcm_dc_radio_enabled">
-        <text>Enable Radios</text>
+    <string id="ui_mcm_dc_general_radio_enabled">
+        <text>Radios</text>
     </string>
-    <string id="ui_mcm_dc_radio_volume">
-        <text>Radio Volume (default: 1.0)</text>
+    <string id="ui_mcm_dc_general_radio_enabled_desc">
+        <text>Off mutes every radio.</text>
     </string>
-    <string id="ui_mcm_dc_radio_frequency">
-        <text>Pause Between Tracks (default: 1.0) - higher = longer silence</text>
+    <string id="ui_mcm_dc_general_radio_volume">
+        <text>Radio volume (x)</text>
+    </string>
+    <string id="ui_mcm_dc_general_radio_volume_desc">
+        <text>Multiplies each radio's own volume. 1.0 is the game's volume.</text>
+    </string>
+    <string id="ui_mcm_dc_general_radio_frequency">
+        <text>Pause between tracks (x)</text>
+    </string>
+    <string id="ui_mcm_dc_general_radio_frequency_desc">
+        <text>Stretches the silence between tracks. Above 1.0 the radio waits longer, and below 1.0 it plays more often.</text>
     </string>
 
     <string id="ui_mcm_dc_desc_megaphone">
-        <text>Duty propaganda, Arena announcer, alarms</text>
+        <text>Duty propaganda, the Arena announcer, alarms and announcements.</text>
     </string>
-    <string id="ui_mcm_dc_megaphone_enabled">
-        <text>Enable Megaphones</text>
+    <string id="ui_mcm_dc_general_megaphone_enabled">
+        <text>Megaphones</text>
     </string>
-    <string id="ui_mcm_dc_megaphone_volume">
-        <text>Megaphone Volume (default: 1.0)</text>
+    <string id="ui_mcm_dc_general_megaphone_enabled_desc">
+        <text>Off mutes every megaphone.</text>
     </string>
-    <string id="ui_mcm_dc_megaphone_frequency">
-        <text>Pause Between Announcements (default: 1.0) - higher = longer silence</text>
+    <string id="ui_mcm_dc_general_megaphone_volume">
+        <text>Megaphone volume (x)</text>
+    </string>
+    <string id="ui_mcm_dc_general_megaphone_volume_desc">
+        <text>Multiplies each megaphone's own volume. 1.0 is the game's volume.</text>
+    </string>
+    <string id="ui_mcm_dc_general_megaphone_frequency">
+        <text>Pause between announcements (x)</text>
+    </string>
+    <string id="ui_mcm_dc_general_megaphone_frequency_desc">
+        <text>Stretches the silence between announcements. Above 1.0 the megaphone waits longer, and below 1.0 it speaks more often.</text>
     </string>
 
     <string id="ui_mcm_dc_desc_guitar">
-        <text>Campfire guitar (requires Guitar Animation mod)</text>
+        <text>The guitar you play, from the Guitar Animation addon. Without the addon this section does nothing.</text>
     </string>
-    <string id="ui_mcm_dc_guitar_enabled">
-        <text>Enable Guitar</text>
+    <string id="ui_mcm_dc_general_guitar_enabled">
+        <text>Guitar</text>
     </string>
-    <string id="ui_mcm_dc_guitar_volume">
-        <text>Guitar Volume (default: 1.0)</text>
+    <string id="ui_mcm_dc_general_guitar_enabled_desc">
+        <text>Off makes the guitar play nothing.</text>
+    </string>
+    <string id="ui_mcm_dc_general_guitar_volume">
+        <text>Guitar volume (x)</text>
+    </string>
+    <string id="ui_mcm_dc_general_guitar_volume_desc">
+        <text>Multiplies the guitar's volume. 1.0 is the addon's volume.</text>
     </string>
 
     <string id="ui_mcm_dc_desc_harmonica">
-        <text>Harmonica (requires Harmonica mod)</text>
+        <text>The harmonica you play, from the Harmonica addon. Without the addon this section does nothing.</text>
     </string>
-    <string id="ui_mcm_dc_harmonica_enabled">
-        <text>Enable Harmonica</text>
+    <string id="ui_mcm_dc_general_harmonica_enabled">
+        <text>Harmonica</text>
     </string>
-    <string id="ui_mcm_dc_harmonica_volume">
-        <text>Harmonica Volume (default: 1.0)</text>
+    <string id="ui_mcm_dc_general_harmonica_enabled_desc">
+        <text>Off makes the harmonica play nothing.</text>
+    </string>
+    <string id="ui_mcm_dc_general_harmonica_volume">
+        <text>Harmonica volume (x)</text>
+    </string>
+    <string id="ui_mcm_dc_general_harmonica_volume_desc">
+        <text>Multiplies the harmonica's volume. 1.0 is the addon's volume.</text>
     </string>
 
-    <string id="ui_mcm_dc_desc_debug">
-        <text>Console logging for troubleshooting</text>
+    <string id="ui_mcm_menu_general">
+        <text>General</text>
     </string>
-    <string id="ui_mcm_dc_debug_mode">
-        <text>Debug Mode</text>
+    <string id="ui_mcm_menu_development">
+        <text>Development</text>
     </string>
-
-
-    <string id="ui_mcm_dc_footer">
-        <text>Volume boost above 2x may have diminishing effect due to engine limits</text>
+    <string id="ui_mcm_dc_development_desc">
+        <text>These are the tools for a bug report and for a clean start. The debug log writes each sound the mod adjusts to diegeticcontrol.log.</text>
+    </string>
+    <string id="ui_mcm_dc_development_debug_mode">
+        <text>Debug log</text>
+    </string>
+    <string id="ui_mcm_dc_development_debug_mode_desc">
+        <text>Logs the theme and volume of each radio or megaphone the mod adjusts.</text>
+    </string>
+    <string id="ui_mcm_dc_development_reset_warning">
+        <text>Warning: save or discard pending MCM changes first, otherwise they override the reset on the next Apply.</text>
+    </string>
+    <string id="ui_mcm_dc_development_btn_reset_all">
+        <text>Reset to defaults</text>
+    </string>
+    <string id="ui_mcm_dc_development_btn_reset_all_desc">
+        <text>Restores every DiegeticControl setting to its default. Use it after an update that changed the menu.</text>
+    </string>
+    <string id="st_dc_reset_all_done">
+        <text>DiegeticControl: all settings restored to defaults.</text>
     </string>
 </string_table>

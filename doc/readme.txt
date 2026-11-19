@@ -43,37 +43,39 @@ My work is free and open source, ships in most modpacks, and integrates with est
 An organized group copies my work, defames, impersonates and review-bombs me across platforms.
 You can help with a review, a rating, a proper bug report, or a coffee on Ko-fi: https://ko-fi.com/damiansirbu
 
-Anomaly has no way to control the volume of radios, megaphones, guitars, and harmonicas independently from the game's audio sliders.
-You can't turn down Duty propaganda without killing ambient sounds. DiegeticControl fixes this.
+Every release is stable, and a new one can add whole systems or move their settings.
+After every update, open Development in MCM and reset every setting to its default.
 
-The mod hooks directly into the audio subsystems that play in-world sound: ph_sound for radios and megaphones, guitar_anim for campfire guitar, harmonica_anim for harmonica.
-Each source gets its own volume slider, enable/disable toggle, and where applicable a pause multiplier that controls silence between tracks or announcements.
+The volume knob the game never had.
 
-A master volume multiplier sits on top of everything. All changes apply immediately through MCM.
-
-Missing dependencies are handled gracefully. If you don't have the guitar or harmonica mods installed, those controls do nothing.
+DiegeticControl gives every in-world sound source its own volume in MCM: the radios, the megaphones, and the guitar and harmonica you play.
+In vanilla these sounds follow the game's audio sliders, and Duty propaganda cannot go quiet without the ambience going quiet with it.
+Each source now has its own slider and switch, and a change applies the moment you move it.
+If the addon behind a source is missing, its controls stay inert and nothing breaks.
 
 Features:
 
+Master volume:
+  One multiplier over every source on the page.
+  It also scales every other scripted world sound the game plays through the same sound system.
+
 Radios:
-  Controls the volume of faction base radios and music
-  Controls the pause between tracks, longer or shorter
-  Enable/disable toggle
+  Base, trader and camp radios, and the music they play, at your volume.
+  The pause between tracks stretches or shortens, and back at 1.0 the original timing returns.
+  Switched off, every radio goes silent.
 
 Megaphones:
-  Controls the volume of Duty propaganda, the Arena announcer, and alarms
-  Controls the pause between announcements
-  Enable/disable toggle
+  Duty propaganda, the Arena announcer, alarms and announcements, at their own volume.
+  The pause between announcements stretches or shortens the same way.
+  Switched off, every megaphone goes silent.
 
 Guitar:
-  Volume control for campfire guitar (requires Guitar Animation mod)
-  Enable/disable toggle
+  The guitar you play yourself, from Daiviey's Guitar Animation addon, at its own volume.
+  It plays a random track from the addon, and switched off it plays nothing.
 
 Harmonica:
-  Volume control for harmonica (requires Harmonica mod)
-  Enable/disable toggle
-
-Master volume multiplier applied to all sources
+  The harmonica you play yourself, from Daiviey's Harmonica addon, at its own volume.
+  It plays a random track from the addon, and switched off it plays nothing.
 
 Requirements:
 Anomaly 1.5.3
@@ -81,11 +83,11 @@ Modded exes: themrdemonized 20250908 or newer, or AOEngine v0.5.2 or newer. The 
 xlibs (https://www.moddb.com/mods/stalker-anomaly/addons/xlibs-1001)
 MCM
 Anomaly Radios Extended (https://www.moddb.com/mods/stalker-anomaly/addons/anomaly-radios-extended-full-remaster-152) or similar provides the radio and megaphone sources
-Guitar Animation by Daiviey provides the campfire guitar (optional)
+Guitar Animation by Daiviey provides the guitar you play (optional)
 Harmonica by Daiviey provides the harmonica (optional)
 
 Configuration:
-All settings in MCM under DiegeticControl. All defaults are 1.0 (unchanged from game behavior).
+All settings sit on the DiegeticControl page in MCM, and they start at the game's own volume and timing.
 
 Compatibility:
 Depends only on xlibs. Install and uninstall mid-save work. Tested: Anomaly 1.5.3, GAMMA, EFP, Zona, Forgotten Zone.

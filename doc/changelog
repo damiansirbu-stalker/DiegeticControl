@@ -1,4 +1,11 @@
 1.1.1-snapshot
+  A Development page with a reset, and clearer volume settings
+    The volume settings now sit on a General page, and a new Development page holds the debug log and a reset to defaults.
+    The new pages move where MCM stores each setting. Open Development after the update and reset every setting.
+
+  - Added a Development page with the debug log and a button that resets every setting to its default.
+  - Changed the volume and pause labels to show their unit, and added a tooltip to each setting.
+  - Fixed the guitar text, which named the campfire guitar where the mod controls the guitar you play.
 
 1.1.0
   The DiegeticControl name, a new MCM banner and the xlibs 1.9.0 floor
