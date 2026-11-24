@@ -114,4 +114,4 @@
   <string id="st_dc_reset_all_done">
     <text>DiegeticControl: все настройки сброшены к значениям по умолчанию.</text>
   </string>
-</string_table>
+<string id="ui_mcm_dc_development_btn_update_check"><text>Проверить обновление</text></string><string id="ui_mcm_dc_development_btn_update_check_desc"><text>Сейчас запрашивает у GitHub, вышла ли новая версия этого мода, — та же проверка, что при загрузке сохранения. Меню закрывается, и ответ появляется на экране.</text></string></string_table>

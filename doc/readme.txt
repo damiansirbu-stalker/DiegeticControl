@@ -86,6 +86,11 @@ Anomaly Radios Extended (https://www.moddb.com/mods/stalker-anomaly/addons/anoma
 Guitar Animation by Daiviey provides the guitar you play (optional)
 Harmonica by Daiviey provides the harmonica (optional)
 
+Update check:
+On the first save load of each game launch, the mod asks GitHub during the loading screen whether a newer release is out. It needs xlibs 1.10.1 or newer.
+A newer version shows at the foot of its MCM page, and in a PDA message once a day. Check for update in the Development tab asks right away, whenever you want.
+GitHub sees your IP address and the names of the mods it checks. Each request carries only the mod's name and the word xlibs, with no save data, settings or player name.
+
 Configuration:
 All settings sit on the DiegeticControl page in MCM, and they start at the game's own volume and timing.
 
