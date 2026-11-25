@@ -108,6 +108,30 @@
     <string id="ui_mcm_dc_development_debug_mode_desc">
         <text>Logs the theme and volume of each radio or megaphone the mod adjusts.</text>
     </string>
+    <string id="ui_mcm_dc_development_log_level">
+        <text>Log level</text>
+    </string>
+    <string id="ui_mcm_dc_development_log_level_desc">
+        <text>How much DiegeticControl writes to diegeticcontrol.log. Debug adds the update check trace.</text>
+    </string>
+    <string id="dc_development_log_level_lst_error">
+        <text>Error</text>
+    </string>
+    <string id="dc_development_log_level_lst_warn">
+        <text>Warn</text>
+    </string>
+    <string id="dc_development_log_level_lst_info">
+        <text>Info</text>
+    </string>
+    <string id="dc_development_log_level_lst_debug">
+        <text>Debug</text>
+    </string>
+    <string id="ui_mcm_dc_development_log_flush">
+        <text>Flush log each line</text>
+    </string>
+    <string id="ui_mcm_dc_development_log_flush_desc">
+        <text>Write every line immediately. Slower; use only when hunting a crash.</text>
+    </string>
     <string id="ui_mcm_dc_development_reset_warning">
         <text>Warning: save or discard pending MCM changes first, otherwise they override the reset on the next Apply.</text>
     </string>

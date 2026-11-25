@@ -3,7 +3,7 @@
 local math_random, tonumber, tostring = math.random, tonumber, tostring
 local sound_object, RegisterScriptCallback = sound_object, RegisterScriptCallback
 
-local log = xlog.get_logger("DC", { outfile = "diegeticcontrol.log" })
+local log = xlog.get_logger("DiegeticControl", { outfile = "diegeticcontrol.log" })
 
 local CAT_RADIO = "radio"
 local CAT_MEGAPHONE = "megaphone"
@@ -36,6 +36,7 @@ local function update_snapshot()
     snap.guitar_vol    = get("guitar_volume", 1.0)
     snap.harmonica_on  = get("harmonica_enabled", true)
     snap.harmonica_vol = get("harmonica_volume", 1.0)
+    if getter then log.apply_options(getter, "log_level", "log_flush") end
 end
 
 --- True when the theme is a radio emitter.

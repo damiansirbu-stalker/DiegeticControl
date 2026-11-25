@@ -15,10 +15,14 @@ defaults = {
     guitar_enabled = true,
     harmonica_enabled = true,
     debug_mode = false,
+    log_level = "WARN",
+    log_flush = false,
 }
 
 local _key_to_tab = {
     debug_mode = "development",
+    log_level = "development",
+    log_flush = "development",
     btn_reset_all = "development",
     btn_update_check = "development",
 }
@@ -110,6 +114,8 @@ function on_mcm_load()
             {id = "version", type = "desc", text = "ui_mcm_dc_title",
                 ui_hook_functor = { _dc_init.get_platform_functor() },
                 clr = {255, 212, 201, 168}},
+            {id = "update", type = "desc", text = "ui_mcm_xlibs_update_row",
+                ui_hook_functor = { _dc_init.get_update_functor() }},
             },
           },
           {
@@ -122,6 +128,10 @@ function on_mcm_load()
 
             {id = "divider_debug", type = "line"},
             {id = "debug_mode", type = "check", val = 1, def = false},
+            {id = "log_level", type = "list", val = 0, def = "WARN", content = {
+                {"ERROR", "error"}, {"WARN", "warn"}, {"INFO", "info"}, {"DEBUG", "debug"},
+            }},
+            {id = "log_flush", type = "check", val = 1, def = false},
 
             {id = "div_reset", type = "line"},
             {id = "warn_reset", type = "desc", text = "ui_mcm_dc_development_reset_warning", clr = {255, 240, 200, 80}},
