@@ -1,4 +1,4 @@
-Version: 1.1.1-snapshot (xlibs 1.9.0, demonized latest)
+Version: 1.1.1-snapshot (xlibs 1.10.1, demonized latest)
 Changelog: https://github.com/damiansirbu-stalker/DiegeticControl/blob/main/doc/changelog
 Health: https://damiansirbu-stalker.github.io/DiegeticControl/health/
 JitProfiler: https://damiansirbu-stalker.github.io/DiegeticControl/jitprofiler/
